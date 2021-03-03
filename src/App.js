@@ -15,11 +15,12 @@ function App() {
   },[])
 
   //Using Axios 
-  useEffect( ()=>{
-    const url ='https://newsapi.org/v2/top-headlines?country=us&apiKey=3bb8704cfe194767b1653a9999abd6a3';
-    axios(url)
-    .then(data => console.log(data.data.articles.title))
-  },[])
+  // useEffect( ()=>{
+  //   const url ='https://newsapi.org/v2/top-headlines?country=us&apiKey=3bb8704cfe194767b1653a9999abd6a3';
+  //   axios(url)
+  //   .then(data => console.log(data.data.articles))
+  // },[])
+
   return (
     <div className="Container">
       <h2>Headlines: {articles.length}</h2>
